@@ -4,7 +4,7 @@
 
 - To provide a spectrum of solutions that empowers those impacted by autism and neurodiversity to be better seen, heard, understood, valued and appreciated for who they are and to showcase their strengths, gifts and talents so the world can see that greatness exists in everyone.
 
-This is the official repository of our Autism Today redesign project for our DMIT2590 course.
+This is the official repository of our Autism Today redesign project for our DMIT2590 course. Our team name is TwoGherder.
 
 ## **Milestones**
 
