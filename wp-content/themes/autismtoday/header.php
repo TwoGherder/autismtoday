@@ -72,8 +72,6 @@
 						)
 					)
 				?>
-				<a href="#">50/50 Raffle</a>
-				<a href="#">Crowd Funding</a>
 			</nav>
 
 		</div>

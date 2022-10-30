@@ -124,7 +124,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 4.0625rem;
+  height: 5rem;
 }
 @media screen and (min-width: 48rem) {
   .header-container .header-mobile {
@@ -153,7 +153,7 @@ body {
   border-radius: 0.25rem;
   cursor: pointer;
   padding: 0 0.625rem;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .header-container .header-mobile .header-combo .donate-button:hover {
   background-color: #12c0d8;
@@ -167,7 +167,7 @@ body {
   display: block;
   background-color: #ffffff;
   position: relative;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
   border-radius: 0.5rem;
 }
 .header-container .header-mobile .header-combo .toggle-icon span:not(:nth-child(3)) {
@@ -179,12 +179,48 @@ nav {
   background-color: #13344a;
   position: absolute;
   left: -100%;
-  top: 4.0625rem;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+@media screen and (min-width: 48rem) {
+  nav {
+    position: static;
+  }
 }
 nav .main-menu {
   padding: 0;
   list-style-type: none;
+  text-align: center;
+}
+@media screen and (min-width: 48rem) {
+  nav .main-menu {
+    background-color: transparent;
+    display: flex;
+    gap: 0.5rem;
+  }
+}
+nav .main-menu a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+}
+nav .main-menu li.menu-item-55 .sub-menu {
+  display: none;
+}
+nav .main-menu li.menu-item-55 .sub-menu ul {
+  display: block;
+  margin: 0.625rem;
+}
+nav .main-menu li.menu-item-55:hover .sub-menu {
+  display: block;
+  position: absolute;
+  background-color: #13344a;
+  padding: 0;
+  list-style-type: none;
+}
+nav .main-menu li.menu-item-55:hover .sub-menu li a {
+  display: block;
+  padding: 1rem 1.125rem;
+  color: #ffffff;
 }
 
 .show .toggle-icon span:nth-child(2) {
