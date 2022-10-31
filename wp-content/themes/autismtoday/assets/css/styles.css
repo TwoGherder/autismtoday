@@ -109,15 +109,15 @@ body {
   display: none;
 }
 @media screen and (min-width: 48rem) {
-  .header-container .full-logo img,
-.header-container .custom-logo-link img {
-    height: 100%;
-  }
-}
-@media screen and (min-width: 48rem) {
   .header-container .full-logo,
 .header-container .custom-logo-link {
     display: block;
+  }
+}
+@media screen and (min-width: 48rem) {
+  .header-container .full-logo img,
+.header-container .custom-logo-link img {
+    height: 100%;
   }
 }
 .header-container .header-mobile {
@@ -203,24 +203,41 @@ nav .main-menu a {
   color: #ffffff;
   text-decoration: none;
 }
-nav .main-menu li.menu-item-55 .sub-menu {
+nav .main-menu li:last-child > a {
   display: none;
 }
-nav .main-menu li.menu-item-55 .sub-menu ul {
-  display: block;
-  margin: 0.625rem;
+@media screen and (min-width: 48rem) {
+  nav .main-menu li:last-child > a {
+    display: block;
+  }
 }
-nav .main-menu li.menu-item-55:hover .sub-menu {
-  display: block;
-  position: absolute;
-  background-color: #13344a;
+nav .main-menu li a {
+  padding: 1rem;
+}
+nav .main-menu li .sub-menu {
   padding: 0;
-  list-style-type: none;
+  position: static;
 }
-nav .main-menu li.menu-item-55:hover .sub-menu li a {
-  display: block;
-  padding: 1rem 1.125rem;
-  color: #ffffff;
+@media screen and (min-width: 48rem) {
+  nav .main-menu li:last-child .sub-menu {
+    display: none;
+  }
+  nav .main-menu li:last-child .sub-menu ul {
+    display: block;
+    margin: 0.625rem;
+  }
+  nav .main-menu li:last-child:hover .sub-menu {
+    display: block;
+    position: absolute;
+    background-color: #13344a;
+    padding: 0;
+    list-style-type: none;
+  }
+  nav .main-menu li:last-child:hover .sub-menu li a {
+    display: block;
+    padding: 1rem 1.125rem;
+    color: #ffffff;
+  }
 }
 
 .show .toggle-icon span:nth-child(2) {
