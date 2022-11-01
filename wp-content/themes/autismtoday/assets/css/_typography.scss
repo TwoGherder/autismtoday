@@ -1,4 +1,4 @@
-@use "variables";
+@use 'variables';
 
 h1,
 h2,
@@ -6,13 +6,35 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: variables.$heading-font;
-  color: variables.$fallback-color;
-  font-weight: bold;
+	font-family: variables.$heading-font;
+	color: variables.$fallback-color;
+	font-weight: bold;
 }
 
 body {
-  font-family: variables.$content-font;
-  font-weight: 400;
-  color: variables.$navy-blue;
+	font-family: variables.$content-font;
+	font-weight: 400;
+	color: variables.$navy-blue;
+}
+
+//  footer
+footer a {
+	text-decoration: none;
+}
+
+footer,
+footer a,
+footer a:active,
+footer a:visited {
+	color: variables.$alternate-color;
+}
+
+footer a:hover {
+	text-decoration: underline;
+	color: variables.$light-green;
+	font-weight: variables.$bold-500;
+}
+
+footer h3 {
+	font-size: clamp(1.125rem, 2.12vw, 1.575rem);
 }
