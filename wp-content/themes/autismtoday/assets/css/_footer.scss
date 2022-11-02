@@ -1,0 +1,101 @@
+@use 'breakpoints';
+@use 'typography';
+@use 'variables';
+
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+}
+
+// no bullet list must appear
+ul {
+	list-style-type: none;
+}
+
+.site-footer {
+	background-color: variables.$navy-blue;
+	padding: 1.25rem 1.5rem;
+	@media screen and (min-width: breakpoints.$lg) {
+		padding: 5.25rem 10rem;
+	}
+}
+
+.site-footer .widget-title {
+	margin-bottom: 0.75rem;
+}
+
+.site-footer ul {
+	line-height: 1.75;
+}
+
+.top-footer {
+	margin-bottom: 3.25rem;
+}
+
+.top-footer img {
+	width: 30rem;
+	@media screen and (min-width: breakpoints.$md) {
+		width: 25rem;
+	}
+	@media screen and (min-width: breakpoints.$lg) {
+		width: 20rem;
+	}
+}
+
+.mid-footer {
+	margin-bottom: 2.85rem;
+}
+
+// links are all flex in screen
+.site-footer > .flex-row {
+	@media screen and (min-width: 880px) {
+		// max-width: variables.$min-cont-width;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		column-gap: 1.25rem;
+	}
+
+	@media screen and (min-width: breakpoints.$lg) {
+		max-width: variables.$max-cont-width;
+	}
+}
+
+// =========== bottom footer ==========
+.bottom-footer {
+	border-top: solid 2px #707070;
+	margin-top: 2rem;
+	padding: 1rem 0;
+}
+
+// social media
+.soc-med {
+	text-align: center;
+}
+.soc-med ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 0.75rem;
+}
+
+// .soc-med ul li {
+// 	width: 3rem;
+// 	height: 3rem;
+// }
+
+.soc-med > ul svg {
+	width: 2rem;
+	height: 2rem;
+}
+.soc-med > ul .youtube-icon {
+	width: 3rem;
+	height: 3rem;
+}
+
+.copyright p {
+	@media screen and (min-width: breakpoints.$lg) {
+		font-size: 0.875rem;
+	}
+}
