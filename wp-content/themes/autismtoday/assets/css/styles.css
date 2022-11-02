@@ -190,10 +190,11 @@ nav .main-menu {
   padding: 0;
   list-style-type: none;
   text-align: center;
+  font-weight: bold;
 }
 @media screen and (min-width: 48rem) {
   nav .main-menu {
-    background-color: transparent;
+    background-color: #ffffff;
     display: flex;
     gap: 0.5rem;
   }
@@ -213,6 +214,16 @@ nav .main-menu li:last-child > a {
 }
 nav .main-menu li a {
   padding: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+@media screen and (min-width: 48rem) {
+  nav .main-menu li a {
+    color: #13344a;
+  }
+}
+nav .main-menu li a:hover {
+  background-color: #ffffff;
+  color: #13344a;
 }
 nav .main-menu li .sub-menu {
   padding: 0;
@@ -230,13 +241,18 @@ nav .main-menu li .sub-menu {
     display: block;
     position: absolute;
     background-color: #13344a;
-    padding: 0;
+    padding: 1rem;
     list-style-type: none;
+    right: 50;
+    border-radius: 0.25rem;
   }
   nav .main-menu li:last-child:hover .sub-menu li a {
     display: block;
     padding: 1rem 1.125rem;
     color: #ffffff;
+  }
+  nav .main-menu li:last-child:hover .sub-menu li a:hover {
+    color: #13344a;
   }
 }
 

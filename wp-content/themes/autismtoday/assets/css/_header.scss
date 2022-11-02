@@ -82,13 +82,14 @@ nav {
   transition: variables.$animation-all;
   .main-menu {
     @media screen and (min-width: breakpoints.$md) {
-      background-color: transparent;
+      background-color: variables.$alternate-color;
       display: flex;
       gap: 0.5rem;
     }
     padding: 0;
     list-style-type: none;
     text-align: center;
+    font-weight: bold;
     a {
       display: block;
       color: variables.$alternate-color;
@@ -103,6 +104,14 @@ nav {
       }
       a {
         padding: 1rem;
+        transition: variables.$animation-all;
+        @media screen and (min-width: breakpoints.$md) {
+          color: variables.$navy-blue;
+        }
+        &:hover {
+          background-color: variables.$alternate-color;
+          color: variables.$navy-blue;
+        }
       }
       .sub-menu {
         padding: 0;
@@ -121,13 +130,18 @@ nav {
             display: block;
             position: absolute;
             background-color: variables.$navy-blue;
-            padding: 0;
+            padding: 1rem;
             list-style-type: none;
+            right: 50;
+            border-radius: variables.$border-radius-sm;
             li {
               a {
                 display: block;
                 padding: 1rem 1.125rem;
                 color: variables.$alternate-color;
+                &:hover {
+                  color: variables.$navy-blue;
+                }
               }
             }
           }
